@@ -8,11 +8,11 @@ var responseStr = "MySQL Data:";
 
 app.get('/',function(req,res){
    
-   var mysqlHost = process.env.MYSQL_HOST || 'localhost';
+   var mysqlHost = process.env.MYSQL_HOST || '34.69.173.217';
    var mysqlPort = process.env.MYSQL_PORT || '3306';
    var mysqlUser = process.env.MYSQL_USER || 'root';
    var mysqlPass = process.env.MYSQL_PASS || 'root';
-   var mysqlDB   = process.env.MYSQL_DB   || 'node_db';
+   var mysqlDB   = process.env.MYSQL_DB   || 'nodejs_database';
 
    var connectionOptions = {
      host: mysqlHost,
